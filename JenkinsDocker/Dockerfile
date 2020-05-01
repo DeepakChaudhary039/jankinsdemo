@@ -3,5 +3,5 @@
 
 FROM microsoft/aspnetcore:2.0-nanoserver-1803 AS base
 WORKDIR / app 
-COPY ./publish. 
+COPY ./publish . 
 ENTRYPOINT ["dotnet", "JenkinsDocker.dll"]
